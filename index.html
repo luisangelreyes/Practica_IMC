@@ -1,0 +1,48 @@
+    <meta charset="UTF-8">
+    <title>Calculadora de IMC</title>
+    <style> 
+       body{ 
+        background-color: #E8FFED;
+        text-align: center; 
+        font-family:"Trebuchet MS" ;
+       }
+
+    </style> 
+
+    <h1>  Calculadora de IMC</h1>
+<h3 style="text-align: justify; margin-left: 40px;  margin-right: 40px; margin-top: 40px; font-family: Arial;font-weight: normal;"> 
+El IMC o índice de masa corporal es un cálculo matemático resultante de dividir el peso de la persona (en kg) entre su altura en metros al cuadrado. Este valor nos indicará el índice de masa corporal de la persona y nos ayudará a saber si presenta o no obesidad.
+</h3>
+<hr>
+<hr>
+
+<table align="center" border="1" width="400"><caption>Utilice la tabla que se presenta a continuación para ver en qué categoría encaja su IMC</caption>
+    <tbody ><tr>
+        <th valign="top" scope="col">
+            <strong>ÍNDICE DE MASA CORPORAL</strong></th>
+            <th valign="top" scope="col"><strong>CATEGORÍA</strong></th></tr><tr>
+                <th valign="top" scope="row">Por debajo de 18.5</th><td valign="top">Por debajo del peso</td></tr><tr>
+                <th valign="top" scope="row">18.5 a 24.9</th><td valign="top">Saludable</td></tr><tr><th valign="top" scope="row">25.0 a 29.9</th>
+                <td valign="top">Con sobrepeso</td></tr><tr><th valign="top" scope="row">30.0 a 39.9</th>
+                <td valign="top">Obeso</td></tr><tr><th valign="top" scope="row">Más de 40</th>
+                    <td valign="top">Obesidad grave o de alto riesgo</td></tr></tbody></table>
+
+<form id="formularioUsuario">
+    <h2><p>Ingrese tu estatura (en centimetros)</p>
+    <input type="number" id="estatura">
+
+    <p>Ingrese tu peso (en Kilogramos)</p>
+    <input type="number" id="peso" >
+</h2>
+    <button type="submit">Guardar</button>
+</form>
+
+<h1>  Su IMC es:</h1>
+<h1> <div  id="resultadoInmediato" style="margin-top: 20px; font-weight: bold;"></div>
+</h1>
+<h3 style="text-align: left;">Historial de IMC:</h3>
+<ul style="text-align: left;" id="historialUsuario"></ul> 
+<script src="./renderer.js"></script>
+
+
+
